@@ -3,7 +3,7 @@ on:
     tags:
       - '*.*.*'
 
-name: Release
+name: Test Release
 jobs:
   goreleaser:
     name: Create Release
@@ -22,5 +22,5 @@ jobs:
         with:
           args: release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TEST_TOKEN }}
 
