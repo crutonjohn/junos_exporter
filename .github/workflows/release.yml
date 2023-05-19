@@ -1,9 +1,9 @@
 on:
   push:
     tags:
-      - '*.*.*'
+      - 'fake'
 
-name: Release 
+name: Release
 jobs:
   goreleaser:
     name: Create Release
